@@ -15,8 +15,8 @@ RUN apt-get update && \
     rm -rf /virtuoso-opensource && \
     apt-get remove --purge -y ${BUILD_DEPS} && \
     apt-get autoremove -y && \
-	apt-get clean && \
-	rm -rf /var/lib/apt/lists/*
+    apt-get clean && \
+    rm -rf /var/lib/apt/lists/*
 
 ENV PATH /virtuoso/bin/:$PATH
 
